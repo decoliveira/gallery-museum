@@ -1,0 +1,253 @@
+/* Importa a fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Mitr:wght@200;300;400;500;600;700&family=Outfit:wght@100..900&family=Sulphur+Point:wght@300;400;700&family=Unbounded:wght@200..900&display=swap');
+
+body {
+    font-family: "Unbounded", sans-serif; /* Define a fonte padrão */
+    font-weight: 300;
+    background-image: url('img/museu-esculturas.jpg');
+    background-size: cover; /* Ajusta ambas as imagens para cobrir todo o elemento */
+    background-position: center top; /* Centraliza as imagens na horizontal */
+    background-repeat: no-repeat; /* Impede que as imagens se repitam */
+    background-attachment: scroll; /* Faz com que as imagens rolem com a página */
+    background-blend-mode: normal; /* Mantém as imagens separadas */
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    height: 100%; /* Preenche a altura total da viewport */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 50%; /* Ajuste a altura conforme necessário */
+    background-color: #663300;
+    opacity: 1; /* Ajusta a opacidade */
+    z-index: -1; /* Posiciona atrás dos outros elementos */
+    background: linear-gradient(to bottom, #663300, transparent);
+  }
+
+/* Estiliza os títulos h1 */
+h1 {
+    margin-top: 100px;
+    font-size: 2.5rem; /* Tamanho da fonte */
+    color: #dea13e; /* Cor do texto */
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center; /* Alinha o texto ao centro */
+    letter-spacing: 0.4rem; /* Espaçamento entre letras */
+}
+
+/* Estiliza as seções da página */
+section {
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
+}
+
+/* Estiliza os inputs dentro das seções */
+section input {
+    width: 40rem; /* Largura dos inputs */
+    border: none; /* Remove a borda padrão */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 1.5rem; /* Borda arredondada */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
+    color: #45474B; /* Cor do texto */
+    font-size: 1rem; /* Tamanho da fonte */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estiliza os botões dentro das seções */
+section button {
+    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 1.5rem; /* Borda arredondada */
+    background-color: #541111; /* Cor de fundo do botão */
+    color: #F5F7F8; /* Cor do texto do botão */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Adiciona efeito hover ao botão de pesquisa */
+section button:hover {
+    background-color: #30475E; /* Muda a cor de fundo ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
+}
+
+.resultados-pesquisa {
+    width: 60rem; /* Largura máxima da caixa de resultados */
+    height: 46vh; /* Altura máxima da caixa de resultados */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    margin: 1rem auto; /* Centraliza horizontalmente com margens automáticas */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 0.6rem; /* Borda arredondada */
+    
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    background: #FFFFFF; /* Cor de fundo dos itens */
+    border-radius: 0.6rem; /* Borda arredondada */
+    padding: 1rem; /* Espaçamento interno */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    
+}
+
+.item-resultado img {
+    max-width: 150px; /* Largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Borda arredondada */
+    margin-right: 1rem; /* Espaçamento entre a imagem e o texto */
+}
+/* Estiliza os títulos dentro dos itens de resultado */
+h2 {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: #ffffff; /* Cor do texto */
+}
+
+.nome {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: #30475E; /* Cor do texto */
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #30475E; /* Cor do texto dos links */
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: #45474B; /* Cor do texto */
+    margin: 0.5rem 0; /* Margem acima e abaixo */
+}
+
+.obras-destacadas {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #541111;
+    border-radius: 16px;
+    height: 100%;
+    width: 100%; /* Garante que a largura ocupe 100% da viewport */
+    margin-top: 150px; /* Remove margens padrão que possam restringir a largura */
+    padding: 0; /* Remove qualquer padding que possa estar interferindo */
+}
+
+.texto-obras-destacadas {
+    margin-top: 45px;
+}
+
+.galeria {
+    display: flex; /* Habilita o Flexbox */
+    flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha se não couberem */
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    align-items: center; /* Alinha as imagens verticalmente */
+}
+
+.galeria img {
+    border-radius: 8px;
+    width: 300px;
+    margin: 24px;
+}
+
+p {
+    background-color: #FFFFFF; /* Cor de fundo */
+}
+
+/* Estiliza o rodapé da página */
+footer {
+    background-color: #FFFFFF; /* Cor de fundo do rodapé */
+    color: #45474B; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 0; /* Espaçamento interno */
+    width: 100%; /* Largura total da página */
+    position: static; /* Posiciona o rodapé */
+    bottom: 0; /* Alinha ao fundo da página */
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Tamanho da fonte em telas menores */
+        letter-spacing: 0.2rem; /* Espaçamento entre letras em telas menores */
+    }
+
+    section input {
+        width: 25rem; /* Largura dos inputs em telas menores */
+        padding: 0.8rem; /* Espaçamento interno em telas menores */
+    }
+
+    .resultados-pesquisa {
+        width: 40rem; /* Largura da caixa de resultados em telas menores */
+        height: 40vh; /* Altura da caixa de resultados em telas menores */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.3rem; /* Tamanho da fonte dos títulos em telas menores */
+    }
+
+    .item-resultado {
+        flex-direction: column; /* Empilha os elementos em colunas */
+      }
+    
+      .item-resultado img {
+        width: 100%; /* A imagem ocupa toda a largura */
+        margin-bottom: 1rem;
+      }
+    
+      .texto-resultado {
+        flex: none; /* Remove a propriedade flex para controlar a largura */
+      }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
+        letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
+    }
+
+    section input {
+        width: 17rem; /* Largura total dos inputs em telas pequenas */
+    }
+
+    section button {
+        padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
+        font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
+    }
+
+    .resultados-pesquisa {
+        width: 90%; /* Largura da caixa de resultados em telas pequenas */
+        height: 50vh; /* Altura da caixa de resultados em telas pequenas */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
+    }
+
+    .item-resultado {
+        padding: 0.5rem; /* Reduz o padding */
+      }
+    
+      .item-resultado img {
+        max-width: 100%; /* Garante que a imagem não ultrapasse a largura do container */
+      }
+
+    footer {
+        font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+    }
+}

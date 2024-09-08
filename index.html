@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Museum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <h1>Gallery Museum</h1>
+    </header>
+    <main>
+        <section>
+            <input type="text" placeholder="Obras, artistas, museus... " id="campo-pesquisa">
+            <button onclick="pesquisar()">Buscar</button>
+          
+        </section>
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+        </section>
+        <section class="obras-destacadas">
+            <h2 class="texto-obras-destacadas">Obras Destacadas</h2>
+            <div class="galeria">
+              <img src="img/O nascimento de venus.jpg" alt="O Nascimento de Vênus por Sandro Botticelli.">
+              <img src="img/Noite Estrelada.jpg" alt="Noite Estrelada por Vincent Van Gogh.">
+              <img src="img/O beijo.jpg" alt="O Beijo por Gustav Klimt.">
+              <img src="img/Rafael.jpg" alt="O Triunfo de Galateia por Rafael.">
+            </div>
+          </section>
+          
+    </main>
+    <footer>
+      <p>A plataforma digital sofisticada que oferece acesso a obras de arte, promovendo cultura e conhecimento artístico.</p>
+      <br>
+        <p>Desenvolvido por <a href="https://github.com/decoliveira">André Oliveira</a></p>
+        <p>2024 - Gallery Museum. Todos os diretos reservados.</p>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
