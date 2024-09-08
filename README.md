@@ -4,6 +4,8 @@ Este projeto tem como objetivo criar e gerenciar uma base de dados para obras de
 
 O Gallery Museum é uma plataforma digital sofisticada projetada para proporcionar uma experiência imersiva e educacional no mundo da arte. O site visa oferecer acesso a uma vasta coleção de obras de arte, permitindo aos usuários explorar, pesquisar e apreciar a arte de maneira interativa e acessível. O projeto combina design elegante, funcionalidade intuitiva e uma interface responsiva para criar um ambiente digital envolvente.
 
+LINK VERCEL: https://gallery-museum.vercel.app/
+
 Processo de Criação e Desenvolvimento
 1. Concepção e Planejamento
 Definição de Objetivos: O objetivo principal do Gallery Museum é criar uma plataforma onde os usuários possam explorar e aprender sobre obras de arte de maneira acessível e atraente. A intenção é oferecer uma experiência de usuário que seja ao mesmo tempo informativa e visualmente atraente.
